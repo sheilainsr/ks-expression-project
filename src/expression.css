@@ -1,0 +1,17 @@
+.parameter{
+    width: 5rem;
+    height: 1.2rem;
+    border: 1px solid black;
+    background-color:#ccc;
+    border-radius: 4px;
+}
+
+.expressionWrapper{
+    /* turn on flex box element layout for this element and children: will lay things out horizontally */
+display:flex
+}
+
+/* select all of the direct children of an expressionWrapper element */
+.expressionWrapper > * {
+    margin-right: .75em;
+}
