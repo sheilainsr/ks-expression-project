@@ -1,3 +1,5 @@
+"use strict";
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -22,7 +24,7 @@ numArgs:0}
 
 var expression={name:"add", numArgs:2}
 
-ReactDOM.render(<MainPage functionList={functionNames} expression={expression} >  </MainPage>,document.getElementById('root'));
+ReactDOM.render(<MainPage functionList={functionNames} expression={expression} >  </MainPage>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
