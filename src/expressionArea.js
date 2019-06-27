@@ -4,6 +4,7 @@ import React from 'react';
 import Expression from './expression';
 import { useDrop } from 'react-dnd';
 import { ItemTypes } from './Constants';
+import './expressionArea.css';
 
 function ExpressionArea(props){
 
