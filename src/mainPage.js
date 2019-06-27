@@ -11,7 +11,7 @@ function MainPage(props){
         return (
         <DndProvider backend={HTML5Backend}>
         <div>
-          <ExpressionArea expression = {props.expression}/>
+          <ExpressionArea expression = {props.expression} dropHandler = {props.dropHandler}/>
             <div >
             <FunctionList functions={props.functionList}></FunctionList>
             </div>
@@ -20,9 +20,5 @@ function MainPage(props){
         );
 }
 
-function moveExpression()
-{
-    console.log("drop happening");
-}
 
 export default MainPage;

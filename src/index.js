@@ -13,6 +13,11 @@ import MainPage from './mainPage';
 
 //ReactDOM.render(<Expression name='foo' numArgs='3'></Expression>,document.getElementById('root'));
 
+function dropHandler()
+{
+    console.log("drop happening");
+}
+
 var functionNames=[
     {name:"add",
 numArgs:2},
@@ -24,7 +29,7 @@ numArgs:0}
 
 var expression={name:"add", numArgs:2}
 
-ReactDOM.render(<MainPage functionList={functionNames} expression={expression} >  </MainPage>, document.getElementById('root'));
+ReactDOM.render(<MainPage functionList={functionNames} expression={expression} dropHandler={dropHandler}>  </MainPage>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
