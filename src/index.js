@@ -29,7 +29,7 @@ numArgs:2},
 numArgs:3}
 ];
 
-var expression={name:"add", numArgs:2}
+var expression=undefined;
 
 ReactDOM.render(<MainPage functionList={functionNames} expression={expression} dropHandler={dropHandler}>  </MainPage>, document.getElementById('root'));
 

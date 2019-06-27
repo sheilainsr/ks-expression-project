@@ -12,11 +12,22 @@ function ExpressionArea(props){
         drop: props.dropHandler
       })
 
+    //Handle starting case where expression is NULL
+    if(!props.expression)
+    {
+        return ( 
+            <div className="expressionAreaRule" ref={drop}>
+            </div>
+        );
+    }
+    else
+    {
         return ( 
             <div className="expressionAreaRule" ref={drop}>
                <Expression name ={props.expression.name} numArgs={props.expression.numArgs}></Expression>
             </div>
         );
+    }
 }
 
 
