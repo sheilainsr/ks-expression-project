@@ -9,13 +9,11 @@ import Expression from './expression';
 import FunctionList from './functionList';
 import MainPage from './mainPage';
 
-//ReactDOM.render(<App />, document.getElementById('root'));
 
-//ReactDOM.render(<Expression name='foo' numArgs='3'></Expression>,document.getElementById('root'));
-
-function dropHandler()
+function dropHandler(item)
 {
-    console.log("drop happening");
+    ReactDOM.render(<MainPage functionList={functionNames} expression={item.function} dropHandler={dropHandler}>  </MainPage>, document.getElementById('root'));
+
 }
 
 var functionNames=[
@@ -23,8 +21,12 @@ var functionNames=[
 numArgs:2},
 {name:"subtract",
 numArgs:2},
+{name:"multiply",
+numArgs:2},
+{name:"divide",
+numArgs:2},
 {name:"doSomethingComplicated",
-numArgs:0}
+numArgs:3}
 ];
 
 var expression={name:"add", numArgs:2}
