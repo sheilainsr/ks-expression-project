@@ -1,7 +1,7 @@
 .parameter{
     width: 5rem;
     height: 1.2rem;
-    border: 1px solid black;
+    border: 1px solid #c90029;
     background-color:#ccc;
     border-radius: 4px;
 }

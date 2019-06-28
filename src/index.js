@@ -1,35 +1,39 @@
-"use strict";
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Expression from './expression';
-import FunctionList from './functionList';
 import MainPage from './mainPage';
 
 
-function dropHandler(item)
-{
+function dropHandler(item) {
     ReactDOM.render(<MainPage functionList={functionNames} expression={item.function} dropHandler={dropHandler}>  </MainPage>, document.getElementById('root'));
 
 }
 
-var functionNames=[
-    {name:"add",
-numArgs:2},
-{name:"subtract",
-numArgs:2},
-{name:"multiply",
-numArgs:2},
-{name:"divide",
-numArgs:2},
-{name:"doSomethingComplicated",
-numArgs:3}
+var functionNames = [
+    {
+        name: "add",
+        numArgs: 2
+    },
+    {
+        name: "subtract",
+        numArgs: 2
+    },
+    {
+        name: "multiply",
+        numArgs: 2
+    },
+    {
+        name: "divide",
+        numArgs: 2
+    },
+    {
+        name: "doSomethingComplicated",
+        numArgs: 3
+    }
 ];
 
-var expression=undefined;
+var expression = undefined;
 
 ReactDOM.render(<MainPage functionList={functionNames} expression={expression} dropHandler={dropHandler}>  </MainPage>, document.getElementById('root'));
 
